@@ -1,0 +1,22 @@
+//this plugin provides tasks related to Java building (build, test, etc)
+apply plugin: 'java' 
+
+//where to download external libraries from
+repositories {
+    jcenter()
+}
+
+//compile arguments
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" //report warnings as errors
+}
+
+//a "run" task to execute the Dog's main method
+//execute with `gradle run`
+task run(type: JavaExec) {
+	classpath = sourceSets.main.runtimeClasspath //specify the classpath
+
+	main = 'edu.info498.review.Tester' //the class that contains the main method
+
+}
