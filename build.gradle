@@ -17,6 +17,6 @@ compileJava {
 task run(type: JavaExec) {
 	classpath = sourceSets.main.runtimeClasspath //specify the classpath
 
-	main = 'edu.info498.review.Tester' //the class that contains the main method
+	main = 'edu.info448.review.Tester' //the class that contains the main method
 
 }

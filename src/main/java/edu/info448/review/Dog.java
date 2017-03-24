@@ -1,4 +1,4 @@
-package edu.info498.review;
+package edu.info448.review;
 
 /**
  * A simple model class representing a Dog

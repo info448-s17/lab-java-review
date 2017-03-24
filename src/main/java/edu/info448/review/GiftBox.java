@@ -1,4 +1,4 @@
-package edu.info498.review;
+package edu.info448.review;
 
 /**
  * A class representing a gift box containing an object
